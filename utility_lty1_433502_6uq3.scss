@@ -1,0 +1,7 @@
+85 / 59,89,84,21,69,81,19,71,91,37,73,2,83,85,17,38,22,14,89,59,21,69,54,66,78,20,6,26,98,99,20,59,90,25,54,88,91,25,76,84,49,26,8,21,83,29,42,94,4,33,68,26,11,3,59,55,31,41,10,14,62,65,21,55,78,89,4,60,58,22,77,6,97,29,26,14,96,55,32,39,0,20,88,19,30,63,11,40,87,11,60,13,18
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+34 * false
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
