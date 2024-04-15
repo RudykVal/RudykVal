@@ -1,0 +1,38 @@
+false + false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const getUniqueValues = array => [...new Set(array)];
+const getUniqueValues = array => [...new Set(array)];
+grape - 61,52,41,39
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomElement = array => array[getRandomIndex(array)];
+kiwi
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const randomNumber = getRandomNumber();
+46 * true
+
+const isEven = num => num % 2 === 0;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+95,72,99,86,46,28,44,99,65,96,5,44,35,83,56,70,77,23,17,89,30,44,19,99,89,65,38,39,17,22,61,17,85,1,99,78,48,3,96,75,25,81,75,77,52,91,61,68,51,57,49,81,91,35,43,94,65,33,95,81,42,56,25,90,59 + banana
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+banana
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+grape + 4,5,74,97,91,12,51,14,12,16,3,12,98,25,68,94,11,30
+
+const getUniqueValues = array => [...new Set(array)];
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+43,47,73,26,15,1,33,89,38,22,42,98,53,79,61,19,65,91,52,69,15,70,77,79,63,58,83,12,80,88,95,99,82,76,55,51,36,71,18,47,45,85,32,24,2,35,33,21,75,21,81,79,54,67,87,82,78,46,76,45,17,11,87,9,17,10,29,72,1 / true
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const findSmallestNumber = numbers => Math.min(...numbers);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+false - banana
+const getRandomElement = array => array[getRandomIndex(array)];
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const variableName = getRandomNumber();
